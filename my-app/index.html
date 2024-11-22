@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione Servizi Estetici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu minimal -->
+    <nav>
+        <img src="logo home.png" alt="Logo" class="nav-logo">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chi siamo</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Contatti</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Registrati</a></li>
+            <li><a href="#" id="logout-btn" style="display:none;">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="relax-text">
+            <h1>Time to Relax</h1>
+
+            <div id="booking-list" style="display: none;">
+                <h3>Le tue prenotazioni</h3>
+                <div id="bookings" class="booking-cards-container"></div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <!-- Form di prenotazione -->
+            <form id="booking-form" style="display:none;">
+                <h1>Prenota il tuo appuntamento</h1>
+                <p id="welcome-message"></p>
+
+                <label for="service">Servizio:</label>
+                <select id="service" name="service">
+                    <option value="taglio">Taglio di capelli</option>
+                    <option value="colore">Colore</option>
+                    <option value="manicure">Manicure</option>
+                </select>
+
+                <div class="label-group">
+                    <div>
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time">Orario:</label>
+                        <select id="time" name="time" required>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" id="booking-btn">Prenota</button>
+                <button type="button" id="save-changes-btn" style="display:none;">Salva modifiche</button>
+                <button type="button" id="modify-btn" style="display:none;">Modifica</button>
+                <button type="button" id="delete-btn" style="display:none;">Cancella</button>
+            </form>
+
+            <!-- Form di registrazione -->
+            <div id="auth-container">
+                <form id="register-form">
+                    <h1>Registrati e Prenota</h1>
+                    <div class="label-group">
+                        <div>
+                            <label for="firstName">Nome:</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Cognome:</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="label-group">
+                        <div>
+                            <label for="phone">Telefono:</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div>
+                            <label for="reg-email">Email:</label>
+                            <input type="email" id="reg-email" required>
+                        </div>
+                    </div>
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" required>
+                    <label for="confirm-password">Ripeti Password:</label>
+                    <input type="password" id="confirm-password" required>
+                    <button type="submit">Registrati</button>
+                </form>
+
+                <!-- Form di login -->
+                <form id="login-form" style="display:none;">
+                    <h1>Login</h1>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="popular-services">
+        <h2>I NOSTRI SERVIZI</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="taglio capelli.webp" alt="Servizio 1">
+                <h3>Taglio di Capelli</h3>
+                <p>Servizio di taglio professionale per uomini e donne.</p>
+            </div>
+            <div class="service-item">
+                <img src="colore capelli.jpg" alt="Servizio 2">
+                <h3>Colore Capelli</h3>
+                <p>Cambio colore o ritocco con prodotti di alta qualità.</p>
+            </div>
+            <div class="service-item">
+                <img src="manicure.jpeg" alt="Servizio 3">
+                <h3>Manicure</h3>
+                <p>Manicure con tecniche avanzate e prodotti naturali.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Chi siamo</h3>
+                <p>La nostra azienda fornisce servizi per il trattamento del corpo, massaggi, manicure,
+                    e altri per la cura e benessere della tua persona.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Servizi</h3>
+                <ul>
+                    <li><a href="#">Taglio di Capelli</a></li>
+                    <li><a href="#">Colore Capelli</a></li>
+                    <li><a href="#">Manicure</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>Via Lattanzio 2/L, 76121 Barletta</p>
+                <p>Email: ezio.borraccino@gmail.com</p>
+                <p>Telefono: +39 123 456 789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Seguici</h3>
+                <div class="social-links">
+                    <a href="#"><img src="fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="inst.png" alt="Instagram"></a>
+                    <a href="#"><img src="tw.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

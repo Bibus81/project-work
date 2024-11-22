@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 100vh; /* Mantiene l'altezza del viewport */
+   
+}
+
+#booking-list {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#save-changes-btn {
+    display: none; /* Nascondilo inizialmente */
+}
+
+
+
+#booking-list h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.booking-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.booking-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    color: #333;
+}
+
+.booking-card h4 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.booking-card p {
+    margin: 5px 0;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.booking-card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.booking-card .modify-btn {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 8px;
+}
+
+.booking-card .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Imposta un'altezza fissa per la container */
+    padding: 50px;
+    background: url('foto.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo trasparente */
+    padding: 20px 0;
+    position: fixed;  /* Menu fisso in cima alla pagina */
+    flex-direction: column;  /* Permette di avere il menu in alto e il form sotto */
+    top: 0;
+    text-align: center;
+    
+    .nav-logo {
+        width: 150px; /* Larghezza dell'immagine */
+        height: auto; /* Mantiene le proporzioni */
+        margin-left: 30px; /* Spazio tra l'immagine e i link */
+        object-fit: contain; /* Assicura che l'immagine si adatti senza deformarsi */
+    }
+    
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #000;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+.relax-text {
+    flex: 1;
+    text-align: left;
+    margin-right: 50px; /* Distanza tra il testo e il modulo */
+}
+
+.relax-text h1 {
+    font-size: 100px; /* Grandezza del testo */
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 0 0 50px;
+}
+
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-group div {
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;  /* Riduci la dimensione del carattere delle etichette */
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;  /* Riduci l'altezza dei campi */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;  /* Riduci la dimensione del testo nei campi */
+}
+
+button {
+    background-color: #b85c82;
+    color: #fff;
+    padding: 8px 16px;  /* Riduci la dimensione del pulsante */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;  /* Riduci la dimensione del testo del pulsante */
+}
+
+button:hover {
+    background-color: #3c64a0;
+}
+
+#response {
+    margin-top: 20px;
+}
+
+#popular-services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#popular-services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce lo spazio equamente */
+    flex-wrap: nowrap; /* Impedisce che gli elementi vadano su più righe */
+}
+
+.service-item {
+    flex: 1 1 30%; /* Ogni item occuperà circa il 30% dello spazio disponibile */
+    margin: 15px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+
