@@ -1,3 +1,4 @@
+/* Stile generale per il body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +7,7 @@ body {
     height: 100vh; /* Mantiene l'altezza del viewport */
    
 }
-
+/* Contenitore per la lista delle prenotazioni */
 #booking-list {
     margin-top: 20px;
     padding: 15px;
@@ -14,39 +15,39 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+/* Pulsante di salvataggio nascosto inizialmente */
 #save-changes-btn {
-    display: none; /* Nascondilo inizialmente */
+    display: none; /* Nasconde inizialmente */
 }
 
 
-
+/* Stile del titolo nella lista delle prenotazioni */
 #booking-list h3 {
     text-align: center;
     color: #333;
     margin-bottom: 15px;
     font-size: 1.5em;
 }
-
+/* Contenitore per le card di prenotazione */
 .booking-cards-container {
-    display: flex;
+    display: flex; /* Layout flessibile */
     flex-wrap: wrap;
     gap: 15px;
 }
-
+/* Stile per le singole card di prenotazione */
 .booking-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Ombreggiatura leggera */
     padding: 15px;
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Larghezza massima */
     text-align: left;
     color: #333;
 }
 
 .booking-card h4 {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Dimensione del titolo */
     margin: 5px 0;
 }
 
@@ -60,7 +61,7 @@ body {
     margin-top: 10px;
     padding: 8px 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Angoli arrotondati */
     font-size: 0.9em;
     cursor: pointer;
 }
@@ -76,31 +77,31 @@ body {
     color: white;
 }
 
-
+/* Contenitore principale della pagina */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Imposta un'altezza fissa per la container */
+    height: 100vh; 
     padding: 50px;
-    background: url('foto.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('foto.jpg') no-repeat center center fixed; /* Immagine di sfondo */
+    background-size: cover; /* Copertura totale dello sfondo */
 }
 
 nav {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Sfondo trasparente */
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo semi-trasparente */
     padding: 20px 0;
-    position: fixed;  /* Menu fisso in cima alla pagina */
-    flex-direction: column;  /* Permette di avere il menu in alto e il form sotto */
-    top: 0;
+    position: fixed;  /* Posizionamento fisso */
+    flex-direction: column;  
+    top: 0; /* Allineamento in alto */
     text-align: center;
     
     .nav-logo {
-        width: 150px; /* Larghezza dell'immagine */
-        height: auto; /* Mantiene le proporzioni */
-        margin-left: 30px; /* Spazio tra l'immagine e i link */
-        object-fit: contain; /* Assicura che l'immagine si adatti senza deformarsi */
+        width: 150px; /* Larghezza logo */
+        height: auto; 
+        margin-left: 30px; 
+        object-fit: contain; 
     }
     
 }
@@ -128,6 +129,8 @@ h1 {
     color: #000;
 }
 
+
+/* Stile del form */
 form {
     background-color: #fff;
     padding: 20px;
@@ -139,18 +142,14 @@ form {
     
 }
 
-
-
-
-
 .relax-text {
     flex: 1;
     text-align: left;
-    margin-right: 50px; /* Distanza tra il testo e il modulo */
+    margin-right: 50px; 
 }
 
 .relax-text h1 {
-    font-size: 100px; /* Grandezza del testo */
+    font-size: 100px; 
     color: #ffffff;
     font-weight: bold;
     margin: 0 0 0 50px;
@@ -177,26 +176,26 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 12px;  /* Riduci la dimensione del carattere delle etichette */
+    font-size: 12px;  
 }
 
 input, select {
     width: 100%;
-    padding: 6px;  /* Riduci l'altezza dei campi */
+    padding: 6px;  
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 12px;  /* Riduci la dimensione del testo nei campi */
+    font-size: 12px;  
 }
 
 button {
     background-color: #b85c82;
     color: #fff;
-    padding: 8px 16px;  /* Riduci la dimensione del pulsante */
+    padding: 8px 16px;  
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 12px;  /* Riduci la dimensione del testo del pulsante */
+    font-size: 12px;  
 }
 
 button:hover {
@@ -257,12 +256,12 @@ button:hover {
 
 .services-container {
     display: flex;
-    justify-content: space-between; /* Distribuisce lo spazio equamente */
-    flex-wrap: nowrap; /* Impedisce che gli elementi vadano su più righe */
+    justify-content: space-between; 
+    flex-wrap: nowrap; 
 }
 
 .service-item {
-    flex: 1 1 30%; /* Ogni item occuperà circa il 30% dello spazio disponibile */
+    flex: 1 1 30%; 
     margin: 15px;
     background-color: #fff;
     padding: 20px;
